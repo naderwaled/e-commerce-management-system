@@ -1,0 +1,17 @@
+C:\Users\nader\Desktop\Home-design\Home-design\bin\Debug\Home-design.exe.config
+C:\Users\nader\Desktop\Home-design\Home-design\bin\Debug\Home-design.exe
+C:\Users\nader\Desktop\Home-design\Home-design\bin\Debug\Home-design.pdb
+C:\Users\nader\Desktop\Home-design\Home-design\bin\Debug\Bunifu.Core.dll
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Ds_project.csprojResolveAssemblyReference.cache
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home_design.Properties.Resources.resources
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Ds_project.csproj.GenerateResource.Cache
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home-design.exe
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home-design.pdb
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home_design.beauty.resources
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home_design.Electronics.resources
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home_design.Fashion.resources
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home_design.hAppl.resources
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home_design.Home.resources
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home_design.market.resources
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home_design.Mobiles.resources
+C:\Users\nader\Desktop\Home-design\Home-design\obj\Debug\Home_design.Uc_home.resources

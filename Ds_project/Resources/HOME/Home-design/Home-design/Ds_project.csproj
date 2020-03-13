@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9D8203D-EDBF-48C6-AEBC-C06EC5BF2BD9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Home_design</RootNamespace>
+    <AssemblyName>Home-design</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="beauty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="beauty.Designer.cs">
+      <DependentUpon>beauty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Electronics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Electronics.Designer.cs">
+      <DependentUpon>Electronics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fashion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fashion.Designer.cs">
+      <DependentUpon>Fashion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hAppl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hAppl.Designer.cs">
+      <DependentUpon>hAppl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="market.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="market.Designer.cs">
+      <DependentUpon>market.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mobiles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mobiles.Designer.cs">
+      <DependentUpon>Mobiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uc_home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc_home.Designer.cs">
+      <DependentUpon>Uc_home.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="beauty.resx">
+      <DependentUpon>beauty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Electronics.resx">
+      <DependentUpon>Electronics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fashion.resx">
+      <DependentUpon>Fashion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hAppl.resx">
+      <DependentUpon>hAppl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="market.resx">
+      <DependentUpon>market.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mobiles.resx">
+      <DependentUpon>Mobiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Uc_home.resx">
+      <DependentUpon>Uc_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Souq-Logo-300x212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click&amp;collect.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laundry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hanger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free-Shipping-en.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mob.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Personal-care-en_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appliances-en_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home-en_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1533640536-195574585.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1533640536-1955745851.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1533645451-1146788701.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewArrivals_Men-en.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1542493315_Home-en_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home-en_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home-en_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewArrivals_Men-en1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1542650158_1 %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-button-of-three-horizontal-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-back-closed-envelope-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laundry1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhhg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-expand-arrow-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-expand-arrow-filled-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-expand-arrow-filled-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\,obb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cib.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1540482408-1671197168.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\half-filled-rating-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\half-filled-rating-star %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item_XL_10261909_12928836.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\head.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lib.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%3bmal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\let.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buyy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dress.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jump.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\per.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ax.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shh1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jhon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\victoria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\niv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guess.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ov.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mi.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

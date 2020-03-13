@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{006FAC11-A560-4755-BF43-B8DA10BF28ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ds_project</RootNamespace>
+    <AssemblyName>Ds_project</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core">
+      <HintPath>..\..\Bunifu UI WinForms 1.8.0.1\Bunifu.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Downloads\Compressed\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addbrand_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addbrand_uc.Designer.cs">
+      <DependentUpon>addbrand_uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Additem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Additem.Designer.cs">
+      <DependentUpon>Additem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addsection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Addsection.Designer.cs">
+      <DependentUpon>Addsection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brand.cs" />
+    <Compile Include="CircularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items.cs" />
+    <Compile Include="Load_Data.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ElipseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\ItemOfBasket_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\ItemOfBasket_UC.Designer.cs" />
+    <Compile Include="Resources\Item_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\Item_UC.designer.cs">
+      <DependentUpon>Item_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\user.cs" />
+    <Compile Include="Resources\viewbrandsection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\viewbrandsection.designer.cs">
+      <DependentUpon>viewbrandsection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="section.cs" />
+    <Compile Include="Uc_home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc_home.Designer.cs">
+      <DependentUpon>Uc_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Variables.cs" />
+    <Compile Include="viewsection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewsection.Designer.cs">
+      <DependentUpon>viewsection.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addbrand_uc.resx">
+      <DependentUpon>addbrand_uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Additem.resx">
+      <DependentUpon>Additem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addsection.resx">
+      <DependentUpon>Addsection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\ItemOfBasket_UC.resx" />
+    <EmbeddedResource Include="Resources\Item_UC.resx">
+      <DependentUpon>Item_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\viewbrandsection.resx">
+      <DependentUpon>viewbrandsection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc_home.resx">
+      <DependentUpon>Uc_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewsection.resx">
+      <DependentUpon>viewsection.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook-logo-in-circular-button-outlined-social-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter-circular-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter-circular-button %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social-google-plus-circular-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ds1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-back-closed-envelope-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-back-closed-envelope-shape %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-filled-closed-envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-filled-closed-envelope %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buying-on-smartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vintage-cellphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vintage-cellphone %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-button-of-three-horizontal-lines1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhhg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %285%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hanger1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laundry11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-expand-arrow-filled-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buyy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nai1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\,obb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hai1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cib1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nader.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-with-cogwheels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2018-12-19 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item_XXL_38545201_150300094.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2018-12-20 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43084585_1922913618018391_3888494275461120000_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43084585_1922913618018391_3888494275461120000_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casio1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-3-shopping-33817816-500-333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC100610656.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cartoon-png-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1520424209-889773928.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-3-shopping-33817816-500-3331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bu.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
